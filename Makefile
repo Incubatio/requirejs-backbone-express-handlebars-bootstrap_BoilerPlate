@@ -7,7 +7,8 @@ watch:
 	coffee --compile --watch --lint --output build src
 
 install:
-	r.js -o baseUrl=build/lib/ name=main out=assets/js/boiler-plate.min.js
+	r.js -o baseUrl=./build/client paths.requireLib=./node_modules/requirejs-browser/require.js include=requireLib name=main out=assets/js/boilerPlate.min.js mainConfigFile=build/client.js insertRequire=main
+	r.js -o optimize=none baseUrl=./build/client paths.requireLib=./node_modules/requirejs-browser/require.js include=requireLib name=main out=assets/js/boilerPlate.js mainConfigFile=build/client.js insertRequire=main
 
 clean: 
 	rm -rf build
