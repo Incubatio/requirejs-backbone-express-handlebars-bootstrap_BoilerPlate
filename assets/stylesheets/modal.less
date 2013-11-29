@@ -1,0 +1,70 @@
+#modal-dialog {
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  right:0;
+  left:0;
+  display:none;
+
+  #modal-overlay {
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background:black;
+    opacity:0.7;
+    z-index:1000;
+  }
+
+  #modal-content {
+    position: absolute;
+    overflow-x: auto;
+    overflow-y: scroll;
+    top:0px;
+    bottom:0px;
+    right:0;
+    left:0;
+    width: 771px;
+    height: 524px;
+    z-index:1050;
+    //background:url(../img/pop_up2.png) center center no-repeat;
+    background-color:white;
+    margin: auto;
+    padding-top: 40px;
+    padding-left: 20px;
+
+    .close-back{
+      border-radius: 8px;
+      border: 2px;
+      //background: #40212f;
+      z-index: 1200;
+      position: absolute;
+      top:32px;
+      right:26px;
+      height: 38px;
+      width: 38px;
+      padding-top: 2px;
+      padding-left: 2px;
+    }
+    .close {
+      border-radius: 8px;
+      width: 10px;
+      height: 24px;
+      font-size: 18px;
+      padding: 3px 10px;
+      -webkit-box-shadow: 2px 2px 0 #831e47;
+      -moz-box-shadow: 2px 2px 0 #831e47;
+      box-shadow: 2px 2px 0 #831e47;
+      text-shadow: none;
+      &:hover{
+        font-size:19px;
+      }
+      .icon-remove{
+        position: absolute;
+        top: 9px;
+       right: 14px;
+      }
+    }
+  }
+}

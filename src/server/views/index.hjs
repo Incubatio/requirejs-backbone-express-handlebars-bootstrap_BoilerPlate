@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='/assets/stylesheets/style.css' />
+  </head>
+  <body> 
+    <div id="header">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="javascript:void(0)" data-toggle="tab" id="home">Home</a></li>
+        <li><a href="javascript:void(0)" data-toggle="tab" id="ping">Ping</a></li>
+        <li><a href="javascript:void(0)" data-toggle="tab" id="modal">Modal</a></li>
+      </ul>
+    </div>
+    <div id="main"><h1>hello world</h1> </div>
+    <div id="footer">foot</div>
+    <div id="modal-dialog"></div>
+    <script src="/npm/requirejs-browser.js"></script>
+    <script src="/build/client.js"></script>
+    <script>require(['main']);</script>
+  </body>
+</html>
